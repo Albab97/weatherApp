@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>My Weather App</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div
+      class="d-flex justify-content-center align-items-center flex-column m-3"
+    >
+      <h2 class="text-center mb-4">Weather App</h2>
+      <form>
+        <div class="form-row align-items-center d-flex justify-content-center">
+          <div class="col-auto">
+            <div>Enter city</div>
+            <input
+              type="text"
+              class="form-control mb-2"
+              id="inlineFormInput"
+              placeholder="Delhi"
+            />
+          </div>
+          <div class="col-auto">
+            <button id="submit" type="submit" class="btn btn-primary mb-2">Submit</button>
+          </div>
+        </div>
+      </form>
+      <div class="cards d-flex">
+        <div class="card m-2" style="width: 18rem">
+          <h5 class="card-title text-center">Temperature</h5>
+          <div class="card-body">
+            <h6 class="card-title text-center"><span id="temp">20</span><span class="text-muted"> &#8451</span></h6>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+          </div>
+        </div>
+        <div class="card m-2" style="width: 18rem">
+          <h5 class="card-title text-center">Wind</h5>
+          <div class="card-body">
+            <h6 class="card-title text-center"><span id="wind_speed">1.54</span><span class="text-muted">&#160 km/hr</span></h6>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+          </div>
+        </div>
+        <div class="card m-2" style="width: 18rem">
+          <h5 class="card-title text-center">Humidity</h5>
+          <div class="card-body">
+            <h6 class="card-title text-center"><span id="humidity">30</span><span class="text-muted">&#160 %</span></h6>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
