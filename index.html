@@ -10,58 +10,65 @@
       integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
       crossorigin="anonymous"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
     <div
-      class="d-flex justify-content-center align-items-center flex-column m-3"
+      class="d-flex justify-content-center align-items-center flex-column"
     >
-      <h2 class="text-center mb-4">Weather App</h2>
+      <div class="head mb-4">
+        <h2 class="heading text-center m-4">Weather App</h2>
+      </div>
       <form>
-        <div class="form-row align-items-center d-flex justify-content-center">
-          <div class="col-auto">
-            <div>Enter city</div>
+        <div class="form-row d-flex align-items-center justify-content-center m-3">
+          <div class="d-flex justify-content-center align-items-center">
             <input
               type="text"
-              class="form-control mb-2"
+              class="form-control m-2"
               id="inlineFormInput"
-              placeholder="Delhi"
+              placeholder="Enter your city"
             />
           </div>
-          <div class="col-auto">
-            <button id="submit" type="submit" class="btn btn-primary mb-2">Submit</button>
+          <div>
+            <button id="submit" type="submit" class="btn btn-primary m-2">Submit</button>
           </div>
         </div>
       </form>
       <div class="cards d-flex">
-        <div class="card m-2" style="width: 18rem">
+        <div class="card m-3 shadow p-2" style="width: 18rem">
           <h5 class="card-title text-center">Temperature</h5>
           <div class="card-body">
             <h6 class="card-title text-center"><span id="temp">20</span><span class="text-muted"> &#8451</span></h6>
             <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
+              <div>Max Temperature is <span id="max_temp">20</span><span class="text-muted"> &#8451</span></div>
+              <div>Min Temperature is <span id="min_temp">20</span><span class="text-muted"> &#8451</span></div>
+              <div>Feels Like <span id="feels_like">20</span><span class="text-muted"> &#8451</span></div>
             </p>
           </div>
         </div>
-        <div class="card m-2" style="width: 18rem">
+        <div class="card m-3 shadow p-2" style="width: 18rem">
           <h5 class="card-title text-center">Wind</h5>
           <div class="card-body">
             <h6 class="card-title text-center"><span id="wind_speed">1.54</span><span class="text-muted">&#160 km/hr</span></h6>
             <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
+              <div>Wind speed is <span id="wind_speed1">1.54</span><span class="text-muted">&#160 km/hr</span></div>  
+              <div>Wind degrees is <span id="wind_degrees">270</span></div>  
+              <div>Cloud pct is <span id="cloud_pct">100</span></div>  
             </p>
           </div>
         </div>
-        <div class="card m-2" style="width: 18rem">
+        <div class="card m-3 shadow p-2" style="width: 18rem">
           <h5 class="card-title text-center">Humidity</h5>
           <div class="card-body">
             <h6 class="card-title text-center"><span id="humidity">30</span><span class="text-muted">&#160 %</span></h6>
             <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
+              <div>Humidity is <span id="humidity1">30</span><span class="text-muted">&#160 %</span></div>
+              <div>Sunrise is <span id="sunrise">1678583104</span></div>
+              <div>Sunset is <span id="sunset">1678625833</span></div>
             </p>
           </div>
         </div>
